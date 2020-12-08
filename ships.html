@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ναυμαχία</title>
+    </head>
+
+    <body>
+        <p>Γεια σου {{g.user[1]}}</p>
+
+        <!-- Κύριο μέρος της HTML μας εδώ για τη ναυμαχία -->
+        <form method="POST">
+            <p>Δώστε θέση στη συστοιχία LED<br> <!--change of line -->
+                (αν δώσετε στον οριζόντιο άξονα τιμή άνω του 7, η ναυμαχία ξεκινά από την αρχή):<br>
+                <input type="text" name="horizontal" size="4" placeholder="Οριζόντια"> Χ
+                <input type="text" name="vertical" size="4" placeholder="Κάθετα">
+                <br>
+                <button type="submit">ΑΠΟΣΤΟΛΗ στο Sense-HAT</button>
+            </p>
+        </form>
+        <!-- ------------------------------------ -->
+
+        <p><a href="{{url_for('battleship')}}">Ανανέωση</a></p>
+        <p><a href="{{url_for('route_func')}}">Αρχική σελίδα</a></p>
+    </body>
+
+</html>
